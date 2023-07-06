@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="https://upload.wikimedia.org/wikipedia/commons/d/d0/Latex_real_numbers_square.svg" type="image/x-icon">
+    <title>Randforces</title>
+</head>
+<body>
+    <section class="hero has-text-centered">
+        <div class="hero-body">
+          <p class="title">
+            Randforces
+          </p>
+          <p class="subtitle">
+            The Codeforces Randomiser
+          </p>
+        </div>
+    </section>
+    <div class="columns">
+        <div class="column is-6 is-offset-1">
+            <div class="box has-text-centered">
+                <div class="field">
+                    <label class="label">Min Contest ID</label>
+                    <div class="control">
+                    <input class="input has-text-centered" type="number" placeholder="1300" id="mincontestid">
+                    </div>
+                    <p class="help">Please enter the ID of the oldest contest you are comfortable doing problems from</p>
+                </div>
+                <div class="field">
+                    <label class="label">Min Rating</label>
+                    <div class="control">
+                    <input class="input has-text-centered" type="number" placeholder="1500" id="minrating">
+                    </div>
+                    <p class="help">Please enter the minimum rating of the problems you are comfortable doing</p>
+                </div>
+                <div class="field">
+                    <label class="label">Max Rating</label>
+                    <div class="control">
+                    <input class="input has-text-centered" type="number" placeholder="2500" id="maxrating">
+                    </div>
+                    <p class="help">Please enter the maximum rating of the problems you are comfortable doing</p>
+                </div>
+            </div>
+            <button class="button is-light is-fullwidth is-large" onclick="getProblem();" id="submit">Generate Problem</button>
+        </div>
+        <div class="column is-4">
+            <div class="box" id="sugprobbox">
+                <table class="table is-striped" id="suggestedproblems">
+                    <thread>
+                        <tr>
+                            <th id="num1">Name</th>
+                            <th id="num2">ID</th>
+                        </tr>
+                    </thread>
+                </table>
+            </div>
+        </div>
+    </div>
+    <div class="columns">
+        <div class="column is-1 is-offset-1">
+            <div class="box" id="pause-play"></div>
+        </div>
+        <div class="column is-8">            
+            <div class="box has-text-centered" id="clock"></div>
+        </div>
+        <div class="column is-1">
+            <div class="box" id="reset"></div>
+        </div>
+    </div>
+</body>
+<script src="Randv3.js"></script>
+</html>
