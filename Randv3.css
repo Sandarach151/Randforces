@@ -1,0 +1,33 @@
+#sugprobbox{
+    height: 430px;
+}
+
+#num1{
+    width: 310px;
+    text-align: center;
+}
+
+#num2{
+    width: 90px;
+    text-align: center;
+}
+
+#clock{
+    font-size: 50px;
+}
+
+#pause-play{
+    height: 115px;
+}
+
+#pause-play:hover{
+    background-color: #c6c6c6;
+}
+
+#reset{
+    height: 115px;
+}
+
+#reset:hover{
+    background-color: #c6c6c6;
+}
